@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/402654dea6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container mx-auto box-border border-4 px-1 py-1">
+      <nav
+        class="navbar justify-between md:justify-evenly flex flex-row items-center p-2 md:px-3 my-1"
+        id="top"
+      >
+        <div
+          class="hamburger-search text-base md:text-base flex item-center space-x-3 md:order-4"
+        >
+          <div class="md:hidden flex item-center">
+            <i class="fa-solid fa-bars mt-1.5" style="color: #000000"></i>
+          </div>
+          <span class="hidden lg:block hover:underline hover:cursor-pointer"
+            >Search</span
+          >
+          <i
+            class="fa-solid fa-magnifying-glass fa-flip-horizontal mt-1.5"
+            style="color: #000000"
+          ></i>
+        </div>
+
+        <div>
+          <img
+            src="assets/microsoft-logo.png"
+            alt=""
+            class="mslogo md:order-1 w-40 md:w-28"
+          />
+        </div>
+
+        <div
+          class="hidden space-x-3 justify-center items-center text-center order-2 text-sm md:flex md:order-2 md:text-base ml-2"
+        >
+          <div class="hover:underline hover:cursor-pointer">365</div>
+          <div class="hover:underline hover:cursor-pointer">Teams</div>
+          <div class="hover:underline hover:cursor-pointer">Windows</div>
+          <div class="hover:underline hover:cursor-pointer">Surface</div>
+          <div class="hover:underline hover:cursor-pointer">Xbox</div>
+          <div class="hover:underline hover:cursor-pointer">Support</div>
+        </div>
+
+        <div
+          class="hidden md:block md:order-3 text-center ml-20 mt-1 hover:underline hover:cursor-pointer"
+        >
+          All Microsoft
+        </div>
+
+        <div class="cart-user flex md:order-5 text-base md:space-x-1">
+          <div class="cart flex item-center mx-5 space-x-2">
+            <span class="hidden lg:block hover:underline hover:cursor-pointer"
+              >cart</span
+            >
+            <i
+              class="fa-solid fa-cart-shopping text-base md:text-base mt-1.5"
+              style="color: #000000"
+            ></i>
+          </div>
+
+          <div class="user flex item-center space-x-2">
+            <span class="hidden lg:block">Sign in</span>
+            <i class="fa-regular fa-user mt-1" style="color: #000000"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content border-2">
+        <div class="imgbox">
+          <img src="assets/ms-bg-small.avif" alt="" class="md:hidden" />
+          <img src="assets/ms-bg-big.avif" alt="" class="hidden md:block" />
+        </div>
+        <div
+          class="textcontent mt-4 ml-6 md:absolute md:top-20 md:ml-20 md:text-sm lg:top-24 lg:text-lg lg:ml-32"
+        >
+          <div class="text-3xl font-semibold my-4">Microsoft 365</div>
+          <p class="mb-4 w-[20rem] lg:w-[30rem]">
+            Turn your ideas into reality, stay safer online and off, and focus
+            on what matters most with Microsoft 365 apps
+          </p>
+          <div class="lg:flex space-x-8">
+            <div>
+              <button
+                class="bg-[#0067b8] px-3 py-1 text-white font-medium my-1"
+              >
+                For one person
+              </button>
+            </div>
+            <div class="my-3 ml-1">
+              <a href="#" class="text-black font-medium"
+                >For upto six people ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" /> -->
+
+      <div
+        class="promos mx-auto flex flex-col items-center py-7 my-10 px-6 space-y-6 md:space-y-0 md:space-x-16 text-base md:flex-row justify-center"
+      >
+        <div class="flex flex-col items-center space-y-3 text-center">
+          <img src="assets/windows-logo.webp" alt="" class="" />
+          <a href="#" class="text-[#0067b8] underline"
+            >Choose your Microsoft 365</a
+          >
+        </div>
+
+        <div class="flex flex-col items-center space-y-3 text-center">
+          <img src="assets/surface-device-logo.webp" alt="" />
+          <a href="#" class="text-[#0067b8] underline"
+            >Explore Surface device</a
+          >
+        </div>
+
+        <div class="flex flex-col items-center space-y-3 text-center">
+          <img src="assets/xbox-logo.webp" alt="" />
+          <a href="#" class="text-[#0067b8] underline"
+            >Buy Xbox games and consoles</a
+          >
+        </div>
+
+        <div class="flex flex-col items-center space-y-3 text-center">
+          <img src="assets/windows-logo.webp" alt="" />
+          <a href="#" class="text-[#0067b8] underline">Get Windows 11</a>
+        </div>
+      </div>
+
+      <div class="products mt-14 md:px-10">
+        <div
+          class="items flex flex-col flex-wrap sm:flex-row space-y-8 sm:space-y-0 sm:flex-wrap"
+        >
+          <div
+            class="surfacelaptop p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3"
+          >
+            <img src="assets/laptop-image.webp" alt="" />
+            <span class="font-medium text-3xl mt-4">Surface Laptop 5</span>
+            <p class="my-2">
+              Sophisticated style and multitasking speed powered by 12th Gen
+              Intel® Core, with Windows 11.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Learn more ></a
+            >
+          </div>
+
+          <div class="xbox p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/xbox-image.jpeg" alt="" />
+            <span class="font-medium text-3xl mt-4">Xbox series S</span>
+            <p class="my-2">Next-gen performance in the smallest Xbox ever.</p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Shop Xbox Series S ></a
+            >
+          </div>
+
+          <div class="AI p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/AI-image.avif" alt="" />
+            <span class="font-medium text-3xl mt-4">
+              Announcing the next wave of AI innovation
+            </span>
+            <p class="my-2">
+              The new Microsoft Bing and Edge will soon feature more visual
+              search responses, chat history, and persistent chat within Edge.
+              We’re also adding actions to help people complete tasks.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Learn more about it ></a
+            >
+          </div>
+
+          <div
+            class="gamepass p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3"
+          >
+            <img src="assets/gamepass-image.avif" alt="" />
+            <span class="font-medium text-3xl mt-4"
+              >Xbox Game Pass Ultimate</span
+            >
+            <p class="my-2">
+              Xbox Live Gold and hundreds of high-quality console and PC games.
+              Play together with friends and discover your next favourite game.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Join now ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="designed-for-life mt-9 p-1 lg:h-[30rem]">
+        <div class="flex flex-col">
+          <div class="img mt-10 lg:px-10">
+            <img
+              src="assets/laptop-on-table.avif"
+              alt=""
+              class="lg:w-full lg:h-96"
+            />
+          </div>
+          <div
+            class="content flex flex-col space-y-4 px-3 lg:px-20 lg:relative bottom-72 py-4"
+          >
+            <span class="font-semibold text-2xl"
+              >Designed for life today-and tomorrow</span
+            >
+            <p class="lg:text-white lg:w-80">
+              The next-generation of games. Your goals. Friends and family.
+              Windows 11 was made to bring you closer to everything you love.
+            </p>
+            <button
+              class="bg-[#0067b8] px-3 py-2 text-white font-medium my-1 w-fit"
+            >
+              See if your PC is ready
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="for-business my-20">
+        <h1 class="font-semibold text-3xl my-6 ml-3">For business</h1>
+        <div
+          class="items flex flex-col flex-wrap sm:flex-row space-y-8 sm:space-y-0 sm:flex-wrap"
+        >
+          <div class="p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/for business/1.avif" alt="" />
+            <span class="font-semibold text-2xl mt-4"
+              >Surface for Business</span
+            >
+            <p class="my-2">
+              No matter what you do, there’s a Surface to help you do it.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Shop now ></a
+            >
+          </div>
+
+          <div class="p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/for business/2.webp" alt="" />
+            <span class="font-semibold text-2xl mt-4"
+              >Try Microsoft for free</span
+            >
+            <p class="my-2">
+              Get Microsoft Teams, secure cloud storage and premium apps across
+              devices with a free one-month Microsoft 365 Business Standard
+              trial.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Start your free trial ></a
+            >
+          </div>
+
+          <div class="p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/for business/3.webp" alt="" />
+            <span class="font-semibold text-2xl mt-4">
+              Welcome to your Windows 365 Cloud PC
+            </span>
+            <p class="my-2">
+              Securely stream your Windows experience from the Microsoft cloud
+              to any device.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Get it today ></a
+            >
+          </div>
+
+          <div class="p-2 flex flex-wrap flex-col sm:w-1/2 lg:w-1/4 px-3">
+            <img src="assets/for business/4.jpeg" alt="" />
+            <span class="font-semibold text-2xl mt-4"
+              >Windows 11 for business</span
+            >
+            <p class="my-2">
+              Designed for hybrid work. Powerful for employees. Consistent for
+              IT. Secure for all.
+            </p>
+            <a href="#" class="text-[#0067b8] mt-2 font-medium hover:underline"
+              >Learn more ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="socialmedia flex flex-row items-center space-x-10 text-2xl my-8 lg:mx-10"
+      >
+        <span class="text-xl lg:text-lg">Follow Microsoft </span>
+        <div class="icons flex flex-row items-center justify-between space-x-8">
+          <span class="hover:cursor-pointer"
+            ><i class="fa-brands fa-facebook-f" style="color: #231f20"></i
+          ></span>
+          <span class="hover:cursor-pointer"
+            ><i class="fa-brands fa-twitter" style="color: #231f20"></i
+          ></span>
+          <span class="hover:cursor-pointer"
+            ><i class="fa-brands fa-youtube" style="color: #231f20"></i
+          ></span>
+        </div>
+      </div>
+
+      <div class="backtotop flex justify-end my-5 mb-16">
+        <button
+          class="bg-[#d9d9d9] py-2 px-3 font-semibold active:bg-white active:outline-dotted hover:bg-white hover:shadow-md"
+        >
+          <a href="#top">
+            <span class="mx-2"
+              ><i class="fa-solid fa-arrow-up" style="color: #000000"></i
+            ></span>
+            <span>Back to top</span>
+          </a>
+        </button>
+      </div>
+
+      <div class="footer mt-8 bg-[#f2f2f2] flex flex-col">
+        <div
+          class="mainbox flex flex-col px-6 sm:flex-row flex-wrap text-[#616161]"
+        >
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">What's new</h1>
+            <li class="hover:underline hover:cursor-pointer">Microsoft 365</li>
+            <li class="hover:underline hover:cursor-pointer">Games</li>
+            <li class="hover:underline hover:cursor-pointer">Surface Pro 9</li>
+            <li class="hover:underline hover:cursor-pointer">
+              Surface Laptop 5
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Surface Laptop Studio
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Surface Laptop Go 2
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Windows 11 apps
+            </li>
+          </ul>
+
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">Microsoft Store</h1>
+            <li class="hover:underline hover:cursor-pointer">
+              Account profile
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Download Center
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Store Support
+            </li>
+            <li class="hover:underline hover:cursor-pointer">eturns</li>
+            <li class="hover:underline hover:cursor-pointer">Order tracking</li>
+          </ul>
+
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">Education</h1>
+            <li class="hover:underline hover:cursor-pointer">
+              Devices for education
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft in education
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Teams for Education
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft 365 Education
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Office Education
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Educator training and development
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Deals for students and parents
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Azure for students
+            </li>
+          </ul>
+
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">Business</h1>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Cloud
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Security
+            </li>
+            <li class="hover:underline hover:cursor-pointer">Azure</li>
+            <li class="hover:underline hover:cursor-pointer">Dynamics 365</li>
+            <li class="hover:underline hover:cursor-pointer">Microsoft 365</li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Advertising
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Industry
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Teams
+            </li>
+          </ul>
+
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">Developer & IT</h1>
+            <li class="hover:underline hover:cursor-pointer">
+              Developer Center
+            </li>
+            <li class="hover:underline hover:cursor-pointer">Documentation</li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Learn
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Tech Community
+            </li>
+            <li class="hover:underline hover:cursor-pointer">
+              Azure Marketplace
+            </li>
+            <li class="hover:underline hover:cursor-pointer">AppSource</li>
+            <li class="hover:underline hover:cursor-pointer">
+              Microsoft Power Platform
+            </li>
+            <li class="hover:underline hover:cursor-pointer">Visual Studio</li>
+          </ul>
+
+          <ul class="my-8 space-y-5 text-xs sm:w-1/3 lg:w-1/6 px-">
+            <h1 class="font-medium text-base">Company</h1>
+            <li class="hover:underline hover:cursor-pointer">Careers</li>
+            <li class="hover:underline hover:cursor-pointer">
+              About Microsoft
+            </li>
+            <li class="hover:underline hover:cursor-pointer">Company news</li>
+            <li class="hover:underline hover:cursor-pointer">
+              Privacy at Microsoft
+            </li>
+            <li class="hover:underline hover:cursor-pointer">Investors</li>
+            <li class="hover:underline hover:cursor-pointer">Security</li>
+            <li class="hover:underline hover:cursor-pointer">Sustainability</li>
+          </ul>
+        </div>
+
+        <div
+          class="last flex flex-col justify-center text-[0.7rem] px-4 lg:justify-between lg:flex-row items-center flex-wrap"
+        >
+          <div class="earth flex space-x-3 my-5">
+            <span
+              ><i class="fa-solid fa-earth-americas" style="color: #666666"></i
+            ></span>
+            <span>English (India)</span>
+          </div>
+          <div class="space-x-3">
+            <span class="hover:underline cursor-pointer"
+              >Contact Microsoft</span
+            >
+            <span class="hover:underline cursor-pointer">Privacy</span>
+            <span class="hover:underline cursor-pointer">Terms of use</span>
+            <span class="hover:underline cursor-pointer">Trademarks</span>
+            <span class="hover:underline cursor-pointer">About our ads</span>
+            <span class="hover:underline cursor-pointer">
+              © Microsoft 2023</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Microsoft 365  Teams Windows Surface Xbox Support -->
